@@ -310,6 +310,6 @@ document.getElementById('terminal-body').addEventListener('click', () => termInp
 
 // ===================== CONTACT LINKS =====================
 // Replace these placeholder hrefs with real links
-document.getElementById('link-email').href = "mailto:youremail@example.com";
-document.getElementById('link-linkedin').href = "https://linkedin.com/in/your-profile";
-document.getElementById('link-github').href = "https://github.com/your-username";
+document.getElementById('link-email').href = "mailto:fhashmi.200@gmail.com";
+document.getElementById('link-linkedin').href = "https://www.linkedin.com/in/faraz1hashmi/";
+document.getElementById('link-github').href = "https://github.com/fhashmi12";
