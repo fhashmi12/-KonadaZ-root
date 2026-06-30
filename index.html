@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KonadaZ // Faraz Hashmi — Cybersecurity Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scanlines"></div>
+<div class="grid-bg"></div>
+
+<!-- ===== BOOT SEQUENCE ===== -->
+<section id="boot" class="boot-screen">
+  <div class="boot-terminal">
+    <pre id="boot-text"></pre>
+    <span class="cursor">█</span>
+  </div>
+</section>
+
+<!-- ===== NAV ===== -->
+<nav id="main-nav" class="main-nav hidden">
+  <div class="nav-brand">KonadaZ<span class="dot">_</span></div>
+  <div class="nav-links">
+    <a href="#chain">Attack Chain</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#cases">Case Files</a>
+    <a href="#terminal">Terminal</a>
+    <a href="#contact">Connect</a>
+  </div>
+</nav>
+
+<main id="main-content" class="hidden">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-eyebrow">// ASPIRING CYBERSECURITY PROFESSIONAL</div>
+    <h1 class="hero-title">FARAZ HASHMI</h1>
+    <div class="hero-handle">root@konadaz<span class="blink">:~$</span></div>
+    <p class="hero-sub">Breaking systems to understand them. Defending them once I do.<br>
+    Pentesting · SOC Operations · GRC · Cloud Security</p>
+    <div class="hero-tags">
+      <span class="tag tag-offense">OFFENSE</span>
+      <span class="tag tag-defense">DEFENSE</span>
+      <span class="tag tag-grc">GOVERNANCE</span>
+    </div>
+    <a href="#chain" class="scroll-cue">SCROLL TO INITIATE <span class="arrow">↓</span></a>
+  </section>
+
+  <!-- ===== ATTACK CHAIN SIMULATION ===== -->
+  <section id="chain" class="chain-section">
+    <div class="section-head">
+      <span class="section-label">SIGNATURE_MODULE</span>
+      <h2>Anatomy of an Engagement</h2>
+      <p class="section-desc">A simplified, illustrative walkthrough of how a security engagement moves from reconnaissance to remediation. Click each stage.</p>
+    </div>
+
+    <div class="chain-track" id="chain-track">
+      <div class="chain-line"></div>
+      <div class="chain-node" data-stage="0">
+        <div class="node-dot"></div>
+        <div class="node-label">Recon</div>
+      </div>
+      <div class="chain-node" data-stage="1">
+        <div class="node-dot"></div>
+        <div class="node-label">Exploit</div>
+      </div>
+      <div class="chain-node" data-stage="2">
+        <div class="node-dot"></div>
+        <div class="node-label">Lateral Move</div>
+      </div>
+      <div class="chain-node" data-stage="3">
+        <div class="node-dot"></div>
+        <div class="node-label">Detection</div>
+      </div>
+      <div class="chain-node" data-stage="4">
+        <div class="node-dot"></div>
+        <div class="node-label">Remediation</div>
+      </div>
+    </div>
+
+    <div class="chain-detail" id="chain-detail">
+      <div class="detail-placeholder">Select a stage above to view detail.</div>
+    </div>
+  </section>
+
+  <!-- ===== SOC DASHBOARD ===== -->
+  <section id="dashboard" class="dashboard-section">
+    <div class="section-head">
+      <span class="section-label">LIVE_STATUS</span>
+      <h2>Skills Console</h2>
+      <p class="section-desc">A status board of where I'm focused right now. Numbers reflect ongoing study and lab hours, not certifications I haven't earned yet.</p>
+    </div>
+
+    <div class="dashboard-grid">
+      <div class="skill-panel">
+        <div class="panel-title">PROFICIENCY MATRIX</div>
+        <div class="skill-bars" id="skill-bars"></div>
+      </div>
+
+      <div class="alert-panel">
+        <div class="panel-title">ACTIVITY FEED <span class="live-dot"></span> LIVE</div>
+        <div class="alert-feed" id="alert-feed"></div>
+      </div>
+
+      <div class="radar-panel">
+        <div class="panel-title">DOMAIN COVERAGE</div>
+        <svg id="radar-chart" viewBox="0 0 300 300"></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CASE FILES ===== -->
+  <section id="cases" class="cases-section">
+    <div class="section-head">
+      <span class="section-label">ARCHIVE</span>
+      <h2>Case Files</h2>
+      <p class="section-desc">Selected labs and projects, filed as incident reports. <em>Placeholder content — swap in your real work.</em></p>
+    </div>
+
+    <div class="case-grid" id="case-grid"></div>
+  </section>
+
+  <!-- ===== CLASSIC TERMINAL ===== -->
+  <section id="terminal" class="terminal-section">
+    <div class="section-head">
+      <span class="section-label">LEGACY_INTERFACE</span>
+      <h2>Direct Access Terminal</h2>
+      <p class="section-desc">Type a command. Try <code>help</code>.</p>
+    </div>
+
+    <div class="terminal-window">
+      <div class="terminal-bar">
+        <span class="t-dot t-red"></span><span class="t-dot t-yellow"></span><span class="t-dot t-green"></span>
+        <span class="terminal-title">konadaz@root: ~</span>
+      </div>
+      <div class="terminal-body" id="terminal-body">
+        <div class="term-line">Welcome to KonadaZ-OS [Version 1.0.0]</div>
+        <div class="term-line">Type <span class="t-accent">help</span> to list available commands.</div>
+        <div id="term-history"></div>
+        <div class="term-input-row">
+          <span class="term-prompt">root@konadaz:~$</span>
+          <input type="text" id="term-input" autocomplete="off" spellcheck="false">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact-section">
+    <div class="section-head">
+      <span class="section-label">AUTH_REQUIRED</span>
+      <h2>Establish Connection</h2>
+    </div>
+
+    <div class="login-card">
+      <div class="login-row"><span class="login-label">user:</span> Faraz Hashmi</div>
+      <div class="login-row"><span class="login-label">alias:</span> KonadaZ</div>
+      <div class="login-row login-links">
+        <a href="#" class="login-link" id="link-email">[ EMAIL ]</a>
+        <a href="#" class="login-link" id="link-linkedin">[ LINKEDIN ]</a>
+        <a href="#" class="login-link" id="link-github">[ GITHUB ]</a>
+      </div>
+      <div class="login-status">STATUS: <span class="status-open">OPEN TO OPPORTUNITIES</span></div>
+    </div>
+
+    <footer class="footer">
+      <span>© 2026 Faraz Hashmi · KonadaZ. Built with intent, not a template.</span>
+    </footer>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
